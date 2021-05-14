@@ -9,7 +9,7 @@ def breadth_first_search(self, src_vertex = 0):
         src_vertex (int, optional): Source vertex from which breadth first search 
                                     is performed. Defaults to 0.
 
-    Returns:
+    Returns: frontier_from_src, parent
         tuple(List(int), List(int)): Returns the level of each reachable vertex in 
                                     the BFS tree and parent of each vertex found 
                                     during the traversal.
