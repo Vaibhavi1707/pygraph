@@ -1,3 +1,12 @@
+def find_shortest_paths(self):
+    pass
+
+def find_shortest_paths(self, s):
+    pass
+
+def find_shortest_paths(self, s, t):
+    pass
+
 class Graph:
     def __init__(self, vertices):
         self.v = vertices #number of vertices in graph
