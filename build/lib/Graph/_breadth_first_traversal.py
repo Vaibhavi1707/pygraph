@@ -1,6 +1,4 @@
 import math, sys
-sys.path.insert(1, "../../../")
-import pygraph.src.Graph
 
 def breadth_first_search(self, src_vertex = 0):
     """
@@ -56,18 +54,10 @@ def bfs_tree(self, src_vertex = 0):
                                     Defaults to 0.
 
     Returns:
-        Graph(): predecessor subgraph i.e graph containing all the edges, 
-                (parent[u], u) as obtained from BFS
+        List(int): predecessor subgraph i.e list such that list[u] = parent[u]
     """
-    edges, vertices = [], [src_vertex]
     parents = self.breadth_first_search(src_vertex)[1]
-    
-    for u, parent in enumerate(parents):
-        if parent != None:
-            edges.append((parent, u))
-            vertices.append(u)
-            
-    return pygraph.src.Graph.Graph(vertices, edges)
+    return parents
         
 def is_bipartite(self, src_vertex = 0):
     """

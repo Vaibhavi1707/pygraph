@@ -1,7 +1,7 @@
 # If you want to use the Graph constructor anywhere in your code.
 import math, sys
-sys.path.insert(1, "../../../")
-import pygraph.src.Graph
+# sys.path.insert(1, "../../../")
+# import pygraph.src.Graph
 
 # Complete the functions below
 

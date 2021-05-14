@@ -21,11 +21,8 @@ class TestBreadthFirstTraversal(unittest.TestCase):
         self.assertEqual(self.graph3.unweighted_shortest_paths(0), [0, 1, 1, 2, 2])
         
     def test_bfs_tree(self):
-        pre_graph1 = self.graph1.bfs_tree(0)
-        self.assertEqual([pre_graph1.v, pre_graph1.e], [[0, 1], [(0, 1)]])
-        
-        pre_graph2 = self.graph2.bfs_tree(4)
-        self.assertEqual([pre_graph2.v, pre_graph2.e], [[4, 1, 2, 3], [(3, 1), (3, 2), (4, 3)]])
+        self.assertEqual(self.graph1.bfs_tree(0), [None, 0])
+        self.assertEqual(self.graph2.bfs_tree(4), [None, 3, 3, 4, None])
         
     def test_is_bipartite(self):
         self.assertFalse(self.graph2.is_bipartite(0))
