@@ -1,5 +1,5 @@
 class Graph:
-    def __init__(self):
+    def __init__(self, vertices):
         self.v = vertices #number of vertices in graph
         self.g = [] #edges list
     
@@ -28,6 +28,7 @@ class Graph:
 
     def print_output(self):
       #############
+        pass        
 
 
 #in progress

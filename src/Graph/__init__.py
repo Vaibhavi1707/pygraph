@@ -18,5 +18,5 @@ class Graph():
         self.adjlist = make_adjlist(vertices, edges, weights)
         self.adjmatrix = make_adjmatrix(edges, weights)
         
-    from BreadthFirstTraversal import breadth_first_search, unweighted_shortest_paths, bfs_tree, is_bipartite, is_connected 
+    from ._breadth_first_traversal import breadth_first_search, unweighted_shortest_paths, bfs_tree, is_bipartite, is_connected 
         
