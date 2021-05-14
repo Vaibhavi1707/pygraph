@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pygraph-mUsICm345
+Version: 0.0.1
+Summary: This package implements basic graph and shortest path algorithms.
+Home-page: https://github.com/Vaibhavi1707/pygraph
+Author: vaibhavi
+Author-email: vaibhavilokegaonkar@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Vaibhavi1707/pygraph/issues
+Description: # Pygraph
+        
+        This package implements basic graph and shortest path algorithms
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
