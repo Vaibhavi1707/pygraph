@@ -3,7 +3,7 @@
 This package implements basic graph and shortest path algorithms
 
 ### Directory Structure
-'''
+```
 .
 ├── LICENSE
 ├── README.md
@@ -19,5 +19,4 @@ This package implements basic graph and shortest path algorithms
 |   |   ├── _breadth_first_traversal.py
 |   |   ├── _depth_first_traversal.py
 |   |   ├── _shortest_paths.py
-'''
-
+```
