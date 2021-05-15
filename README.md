@@ -7,9 +7,9 @@ This package implements basic graph and shortest path algorithms.
 
 ### Description of Functions
 This project has 3 functions namely:
-- _breadth_first_traversal.py: It performs breadth first search on the given graph.Requirements being source vertex(int) from which breadth first search to be performed.It returns frontier_from_src, parent (tuple(List(int), List(int)) i.e. the level of each reachable vertex in the BFS tree and parent of each vertex found during the traversal.
-- _depth_first_traversal.py: As the name suggests it performs depth first search on the given graph.Requirements being source vertex(int) from which depth first search to be performed.It returns predecessor (List[int]), topo_order (List[int]) i.e. List of dfs predecessors such that predecessor[i] = predecessor of i found during DFS traversal and topo sort of the graph obtained.
-- _shortest_paths.py: It performs Bellman-Ford algorithm on the given graph taking source vertex as input requirement and returns dist (List(int)), pre (List(int)) i.e. Shortest path lengths between source s to all other vertices of a weighted graph and predecessor in the path from s to each vertex respectively.
+- _breadth_first_traversal.py: It performs breadth first search on the given graph. Requirements are source vertex(int) from which breadth first search is to be performed. It returns frontier_from_src, parent (tuple(List(int), List(int)) i.e. the level of each reachable vertex in the BFS tree and parent of each vertex found during the traversal.
+- _depth_first_traversal.py: As the name suggests, it performs depth first search on the given graph. Requirements are source vertex(int) from which depth first search is to be performed. It returns predecessor (List[int]), topo_order (List[int]) i.e. list of dfs predecessors such that predecessor[i] = predecessor of i found during DFS traversal and topo sort of the graph obtained.
+- _shortest_paths.py: It performs Bellman-Ford algorithm on the given graph taking source vertex as input requirement and returns dist (List(int)), pre (List(int)) i.e. shortest path lengths between source s to all other vertices of a weighted graph and predecessor in the path from s to each vertex respectively.
 
 
 
