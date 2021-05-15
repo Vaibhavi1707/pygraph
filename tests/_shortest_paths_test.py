@@ -11,17 +11,9 @@ class TestShortestPaths(unittest.TestCase):
         self.g3 = Graph([0], [], [23])
         
     def test_single_source_shortest_path(self):
-        self.assertEqual(self.g1.find_shortest_paths(0), [0, -2])
-        self.assertEqual(self.g2.find_shortest_paths(3), [math.inf, math.inf, math.inf, 0])
-        self.assertEqual(self.g3.find_shortest_paths(0), [0])
-    
-    def test_shortest_path_in_vertices(self):
-        self.assertEqual(self.g1.find_shortest_paths(1, 0), 3)
-        self.assertEqual(self.g2.find_shortest_paths(0, 3), -2)
-    
-    def test_all_pairs_shortest_path(self):
-        self.assertEqual(self.g1.find_shortest_paths(), [[0, -2], [3, 0]])
-        self.assertEqual(self.g2.find_shortest_paths(), [[0, 1, 0, -2], [math.inf, 0, -1, -3], [math.inf, math.inf, 0, -2], [math.inf, math.inf, math.inf, 0]])
-        
+        self.assertEqual(self.g1.find_shortest_paths(0), ([0, -2], [None, 0]))
+        self.assertEqual(self.g2.find_shortest_paths(0), ([0, 1, 0, -2], [None, 0, 1, 2]))
+        self.assertEqual(self.g3.find_shortest_paths(0), ([0], [None]))
+            
 if __name__ == '__main__':
     unittest.main()

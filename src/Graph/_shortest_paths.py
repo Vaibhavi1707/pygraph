@@ -3,18 +3,7 @@ import math, sys
 # sys.path.insert(1, "../../../")
 # import pygraph.src.Graph
 
-
-
-def find_shortest_paths(self,):
-    """
-    Finds the shortest distance in all pairs of vertices in a weighted graph.
-    Returns:
-        List(List(int)): The n * n matrix delta, such that delta[i][j] = shortest distance between vertices i and j
-    """
-    
-    
-
-def find_shortest_paths(self,graph,s):
+def find_shortest_paths(self, s):
     """
     Returns the shortest distance from a source s to all other vertices 
         in a weighted graph.
@@ -24,38 +13,27 @@ def find_shortest_paths(self,graph,s):
                 reachable vertices is to be found.
                 
     Returns:
-        delta (List(int)): Shortest path lengths between source s to all other 
-                vertices of a weighted graph. 
+        dist (List(int)), pre (List(int)): Shortest path lengths between source s to all other 
+                vertices of a weighted graph and predecessor in the path from s to each vertex 
+                respectively.
     """
     #intialize distance and predecessor
-    dist, pre = dict(), dict()
-    for vertex in graph:
+    dist, pre = [math.inf for vertex in self.v], [None for vertex in self.v]
+    for vertex in self.v:
         dist[vertex], pre[vertex] = float('inf'), None
     dist[s] = 0 
 
     #Relax the edges
-    for i in range(len(graph) - 1):
-        for vertex in graph:
-            for adj_vertex in graph[vertex]:
-                if dist[adj_vertex] > dist[vertex] + graph[vertex][adj_vertex]:
-                    dist[adj_vertex], pre[adj_vertex] = dist[vertex] + graph[vertex][adj_vertex], vertex
-
+    for i in range(len(self.v) - 1):
+        for vertex in self.v:
+            for adj_vertex in self.adjlist[vertex]:
+                if dist[adj_vertex] > dist[vertex] + self.weights[vertex][adj_vertex]:
+                    dist[adj_vertex], pre[adj_vertex] = dist[vertex] + self.weights[vertex][adj_vertex], vertex
+    
     #check for negative cycles
-    for vertex in graph:
-        for adj_vertex in graph[vertex]:
-            assert dist[adj_vertex] <= dist[vertex] + graph[vertex][adj_vertex], "Negative weight cycle."
+    for vertex in self.v:
+        for adj_vertex in self.adjlist[vertex]:
+            if dist[adj_vertex] > dist[vertex] + self.weights[vertex][adj_vertex]:
+                return None
  
     return dist, pre
-
-def find_shortest_paths(self, s, t):
-    """
-    Finds the shortest distance between two vertices in a weighted graph.
-    Args:
-        s (int): source vertex
-        t (int): destination vertex
-        
-    Returns:
-        delta (int): Shortest distance between vertex s and vertex t.
-    """
-    pass
-
