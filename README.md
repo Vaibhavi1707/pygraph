@@ -31,7 +31,7 @@ pygraph/
 |   |   ├── SOURCES.txt
 |   |   ├── dependency_links.txt
 |   |   └──  top_level.txt
-├── tests
+└── tests
     ├── _bfs_test.py
     ├── _dfs_test.py
     └── _shortest_paths_test.py
