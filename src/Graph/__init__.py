@@ -21,6 +21,6 @@ class Graph():
         
     from ._breadth_first_traversal import breadth_first_search, unweighted_shortest_paths, bfs_tree, is_bipartite 
     
-    from ._depth_first_traversal import depth_first_search, topological_sort
+    from ._depth_first_traversal import depth_first_search, topological_sort, is_cyclic, dfs_visit
     
     from ._shortest_paths import find_shortest_paths, find_shortest_paths, find_shortest_paths
