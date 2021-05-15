@@ -1,4 +1,5 @@
 <div align="center"><h1>Pygraph</h1></div>
+<div align="center">[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)</div>
 
 This package implements basic graph and shortest path algorithms
 
