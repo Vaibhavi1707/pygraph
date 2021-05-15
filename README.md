@@ -25,6 +25,12 @@ pygraph/
 
 
 ```
+## Authors
+
+- Mahi Monga: [Github](https://github.com/mahimonga) [Linkedin](https://www.linkedin.com/in/mahimonga/)
+- Vaibhavi Lokegaonkar: [Github](https://github.com/Vaibhavi1707) [Linkedin](https://www.linkedin.com/in/vaibhavi-lokegaonkar-06b844195/)
+- Tanmayee Pemmaraju: [Github](https://github.com/priyansi) [Linkedin](https://www.linkedin.com/in/tanmayee-pemmaraju-2abb841aa/)
+
 
 ## License
 
