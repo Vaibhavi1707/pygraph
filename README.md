@@ -17,7 +17,7 @@ pygraph/
 |   |   ├── __init__.py
 |   |   ├── _breadth_first_traversal.py
 |   |   ├── _depth_first_traversal.py
-|   |   └──  _shortest_paths.py
+|   |   └── _shortest_paths.py
 └── tests
     ├── _bfs_test.py
     ├── _dfs_test.py
