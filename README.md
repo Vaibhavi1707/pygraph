@@ -12,6 +12,11 @@ This project has 3 functions namely:
 - _shortest_paths.py: It performs Bellman-Ford algorithm on the given graph taking source vertex as input requirement and returns dist (List(int)), pre (List(int)) i.e. Shortest path lengths between source s to all other vertices of a weighted graph and predecessor in the path from s to each vertex respectively.
 
 
+
+### Test and try 
+You can access Pygraph from [here](https://test.pypi.org/project/pygraph-mUsICm345-v2-2/0.0.1/)
+
+
 ### Directory Structure
 ```
 pygraph/
