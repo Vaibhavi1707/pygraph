@@ -4,7 +4,9 @@ This package implements basic graph and shortest path algorithms
 
 ### Directory Structure
 ```
-.
+pygraph/
+|
+├── .gitignore
 ├── LICENSE
 ├── README.md
 ├── pyproject.toml
@@ -24,5 +26,15 @@ This package implements basic graph and shortest path algorithms
 |   |   ├── SOURCES.txt
 |   |   ├── dependency_links.txt
 |   |   └──  top_level.txt
+|   ├── pygraph_mUsICm345_v2_2.egg-info
+|   |   ├── PKG-INFO
+|   |   ├── SOURCES.txt
+|   |   ├── dependency_links.txt
+|   |   └──  top_level.txt
+├── tests
+|   ├── _bfs_test.py
+|   ├── _dfs_test.py
+|   └── _shortest_paths_test.py
+
 
 ```
