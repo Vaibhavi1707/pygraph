@@ -31,8 +31,17 @@ pygraph/
 |   ├── Graph
 |   |   ├── __init__.py
 |   |   ├── _breadth_first_traversal.py
+|   |   |   ├── breadth_first_search
+|   |   |   ├── unweighted_shortest_paths
+|   |   |   ├── bfs_tree
+|   |   |   └── is_bipartite
 |   |   ├── _depth_first_traversal.py
+|   |   |   ├── dfs_visit
+|   |   |   ├── depth_first_search
+|   |   |   ├── topological_sort
+|   |   |   └── is_cyclic
 |   |   └── _shortest_paths.py
+|   |       └──  find_shortest_paths       
 └── tests
     ├── _bfs_test.py
     ├── _dfs_test.py
