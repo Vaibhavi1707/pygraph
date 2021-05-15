@@ -32,9 +32,9 @@ pygraph/
 |   |   ├── dependency_links.txt
 |   |   └──  top_level.txt
 ├── tests
-|   ├── _bfs_test.py
-|   ├── _dfs_test.py
-|   └── _shortest_paths_test.py
+    ├── _bfs_test.py
+    ├── _dfs_test.py
+    └── _shortest_paths_test.py
 
 
 ```
