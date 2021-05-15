@@ -2,8 +2,8 @@
 
 This package implements basic graph and shortest path algorithms
 
-'''
 ### Directory Structure
+'''
 .
 ├── LICENSE
 ├── README.md
